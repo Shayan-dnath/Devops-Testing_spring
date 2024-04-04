@@ -1,33 +1,37 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Ignore compiled binaries
+*.exe
+*.o
+*.out
+*.class
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
+# Ignore build output directories
+/build/
 /dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+/node_modules/
 
-### VS Code ###
+# Ignore environment-specific files
+.env
+.env.local
+.env.*.local
+
+# Ignore IDE-specific files and directories
+.idea/
 .vscode/
+*.iml
+
+# Ignore logs and temporary files
+/logs/
+/tmp/
+*.log
+
+# Ignore dependency lock files
+yarn.lock
+package-lock.json
+
+# Ignore macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ignore editor backup files
+*~
